@@ -103,7 +103,7 @@ int Game::menu() {
                                 period = 1000;
                                 inMenu = false;
                                 running = true;
-                                exec();
+                                start();
                             }
                             break;
                         case SDLK_2:
@@ -119,7 +119,7 @@ int Game::menu() {
                                 period = 500;
                                 inMenu = false;
                                 running = true;
-                                exec();
+                                start();
                             }
                             break;
                         case SDLK_ESCAPE:
@@ -139,7 +139,7 @@ int Game::menu() {
     return 0;
 }
 
-int Game::exec() {
+int Game::start() {
     Mix_Chunk* riseEffect = Mix_LoadWAV("../sounds/Powerup.wav");
     SDL_Event event;
     SDL_MouseButtonEvent mouseEvent;

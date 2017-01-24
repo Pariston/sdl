@@ -20,7 +20,7 @@ class Game
 public:
     Game(SDL_Renderer *renderer);
     int menu();
-    int exec();
+    int start();
     void draw();
     void close();
     void restart();
